@@ -32,6 +32,8 @@ let costUGX = 15000;
 
 if (dealerName >= 2 && costUGX >= 10000){
     console.log('Thank you for choice us!');
+}else{
+    console.log("Kindly fill the requirement.");
 }
 
 // 4
