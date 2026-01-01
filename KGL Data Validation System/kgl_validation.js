@@ -1,3 +1,5 @@
+// Coursework 1: KGL Data Validation System
+
 // Part A: Variable Declaration and Type Checking (20 marks)
 
 // 1. Create a file named kgl_validation.js . Declare the following variables using appropriate
@@ -133,6 +135,68 @@ if (procurementTonnage >= 1000 && Number(costInUgx) >= 10000) {
 } else {
     console.log("Procurement record invalid");
 }
+
+// Part D: Arrays and Produce Management (25 marks)
+
+// 10. Create an array named kglProduce containing the five types of produce: ['Beans',
+// 'Grain Maize', 'Cow peas', 'G-nuts', 'Soybeans'] . (5 marks)
+
+// ********************* Answer ***********************
+
+let kglProduce = ['Beans','Grain Maize', 'Cow peas', 'G-nuts', 'Soybeans'];
+
+// 11. Write code that:
+// Adds a new produce type "Green Peas" to the end of the array
+// Removes the first item from the array (simulate oldest stock being sold)
+// Checks if "G-nuts" exists in the array using an appropriate array method
+// Logs the final array and its length (15 marks)
+
+// ********************* Answer ***********************
+
+// 1. Add "Green Peas" to the end of the array
+kglProduce.push("Green Peas");
+
+// 2. Remove the first item from the array (oldest stock)
+let removedItem = kglProduce.shift();
+
+// 3. Check if "G-nuts" exists in the array
+let hasGnuts = kglProduce.includes("G-nuts");
+
+// 4. Log the results
+console.log(`Removed Stock: ${removedItem}`);
+console.log(`Does G-nuts exist? ${hasGnuts}`);
+console.log("Final Produce List:", kglProduce);
+console.log(`Final Array Length: ${kglProduce.length}`);
+
+// 12. Create a second array branch2Produce with values ['Maize', 'Beans'] . Use the
+// .concat() method to merge kglProduce and branch2Produce into a new array called
+// allProduce . (5 marks)
+
+// ********************* Answer ***********************
+
+let branch2Produce = ['Maize', 'Beans'];
+
+// Merge the two arrays 
+
+let allProduce = kglProduce.concat(branch2Produce);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
